@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+.centerFath {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  border-bottom: 3px solid #3b3be4 !important;
+}
+
+#about h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+#about .iconka {
+  font-size: 64px;
+  align-self: flex-start !important;
+  font-weight: 300;
+  transition: all 0.2s;
+}
+#about .card {
+  transition: all 0.2s;
+}
+#about .card:hover .iconka {
+  transform: scale(1.1) translateY(5px);
+}
+
+#video p, #about p {
+  color: grey;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#video {
+  background-color: #FAFBFC;
+}
+#video .display {
+  display: none;
+}
+#video #bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+#video .editor #youtube {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+#video .card {
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#video .card .circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 42px;
+  cursor: pointer;
+}
+#video .card .circle i {
+  transform: translateX(-2px);
+}
+#video button {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#showcase .card {
+  overflow: hidden;
+}
+#showcase .card .hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  font-size: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#showcase .card .card-body {
+  padding: 5px;
+}
+#showcase .card .card-body h3 {
+  font-size: 19px;
+}
+#showcase .card .card-body p {
+  margin: 0 !important;
+  font-style: italic;
+}
+#showcase .card:hover .hover {
+  opacity: 0.7;
+}
+#showcase .carousel-indicators {
+  background-color: rgba(50, 50, 93, 0.25);
+}
+
+/*# sourceMappingURL=main.css.map */
